@@ -7,7 +7,8 @@
 }
 
 body {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Inter
+        ', sans-serif;
     background: #f6f3ee; /* light beige background */
     color: #2b2520; /* dark brown text */
 }
@@ -35,6 +36,8 @@ header {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+
 }
 
 nav a {
@@ -329,4 +332,5 @@ nav a:hover {
     }
 
 }
+
 
