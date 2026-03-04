@@ -2,36 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brew & Bloom Coffee</title>
+    <title>Brew & Bloom</title>
     <link rel="stylesheet" href="style.css">
-</head>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
 <body>
 
-<header>
-    <h1>Brew & Bloom</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">Locations</a>
-        <a href="#">Contact</a>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">☕ Brew & Bloom</div>
+
+        <nav>
+        <a href="index.html">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="story.html">ABOUT</a>
+        <a href="locations.html" class="active">LOCATIONS</a>
+        <a href="#" class="order-btn">ORDER ONLINE</a>
+        <!-- Replace # with DoorDash or UberEats link later -->
     </nav>
-</header>
+    </header>
 
-<section class="hero">
-    <div class="hero-text">
-        <h2>Artisanal Coffee</h2>
-        <p>Soulful Moments</p>
-        <button onclick="orderNow()">Order Online</button>
-    </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
 
-<footer>
-    <p>© 2026 Brew & Bloom Coffee</p>
-</footer>
+        <div class="hero-content">
+            <p class="est">EST. 2024</p>
+            <h1>Artisanal Coffee</h1>
+            <h2>Soulful Moments</h2>
+            <p class="description">
+                Experience the perfect blend of ethically sourced beans and artisanal craftsmanship in a space designed for connection.
+            </p>
 
-<script src="script.js"></script>
+            <div class="buttons">
+                 <a href="menu.html" class="primary-btn">View Menu</a>
+                 <a href="locations.html" class="secondary-btn">Our Locations</a>
+            </div>
+        </div>
+    </section>
 
+    <script src="script.js"></script>
 </body>
 </html>
