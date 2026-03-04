@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Playfair Display', sans-serif;
     background: #f6f3ee; /* light beige background */
     color: #2b2520; /* dark brown text */
 }
@@ -329,3 +329,4 @@ nav a:hover {
     }
 
 }
+
