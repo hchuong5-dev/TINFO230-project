@@ -14,18 +14,21 @@
     <header>
         <div class="logo">☕ Brew & Bloom</div>
 
-        <nav>
-        <a href="index.html">HOME</a>
-        <a href="menu.html">MENU</a>
-        <a href="story.html">ABOUT</a>
-        <a href="locations.html" class="active">LOCATIONS</a>
-        <a href="#" class="order-btn">ORDER ONLINE</a>
-        <!-- Replace # with DoorDash or UberEats link later -->
+    <nav>
+      <a href="index.html#home">HOME</a>
+      <a href="index.html#menu">MENU</a>
+      <a href="index.html#about">ABOUT</a>
+      <a href="index.html#locations">LOCATIONS</a>
+
+      <!-- keep this as a real link (DoorDash/UberEats, etc.) -->
+      <a href="https://example.com" class="order-btn" target="_blank" rel="noopener">ORDER ONLINE</a>
+    
     </nav>
+    
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="overlay"></div>
 
         <div class="hero-content">
@@ -37,12 +40,138 @@
             </p>
 
             <div class="buttons">
-                 <a href="menu.html" class="primary-btn">View Menu</a>
-                 <a href="locations.html" class="secondary-btn">Our Locations</a>
+                 <a href="menu.html" class="primary-btn">VIEW MENU</a>
+                 <a href="locations.html" class="secondary-btn">OUR LOCATIONS</a>
             </div>
         </div>
     </section>
 
+<!-- MENU SECTION -->
+
+<section id="menu" class="menu-wrapper">
+
+<div class="left-side">
+
+<h2 class="menu-title">/FEATURED</h2>
+
+<div class="product-grid">
+
+<div class="card">
+<img src="coffee1.jpg">
+<h3>Caramel Latte</h3>
+<p>$5.50</p>
+</div>
+
+<div class="card">
+<img src="coffee2.jpg">
+<h3>Vanilla Cold Brew</h3>
+<p>$5.00</p>
+</div>
+
+<div class="card">
+<img src="coffee3.jpg">
+<h3>Mocha Espresso</h3>
+<p>$5.25</p>
+</div>
+
+<div class="card">
+<img src="coffee4.jpg">
+<h3>Honey Oat Latte</h3>
+<p>$5.75</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="right-side">
+
+<div class="category">Espresso Drinks</div>
+<div class="category">Cold Brew Series</div>
+<div class="category">Signature Lattes</div>
+<div class="category">Seasonal Specials</div>
+<div class="category">Bakery & Pastries</div>
+
+<a href="menu.html" class="primary-btn" style="margin-top:20px;">Full Menu</a>
+
+</div>
+
+</section>
+
+
+<!-- STORY SECTION -->
+
+<section id="about">
+
+<div style="padding:100px 20px; max-width:900px; margin:auto; text-align:center;">
+
+<h2>Our Story</h2>
+
+<br>
+
+<p style="color:#6b635c; line-height:1.7;">
+
+Brew & Bloom began with a simple idea: coffee should bring people together.
+From carefully sourced beans to thoughtfully crafted drinks,
+we focus on quality and comfort in every cup.
+
+Our café is a space where mornings start slow,
+conversations last longer, and every sip feels intentional.
+
+</p>
+
+<br>
+
+<a href="story.html" class="primary-btn">Read Our Story</a>
+
+</div>
+
+</section>
+
+
+<!-- LOCATIONS SECTION -->
+
+<section id="locations" class="location-section">
+
+<div class="location-card">
+
+<img src="location1.jpg">
+
+<h3>Downtown Café</h3>
+
+<p>88 Maple Street</p>
+<p>Riverside, CA</p>
+
+<p class="hours">
+Mon – Fri: 7am – 8pm<br>
+Sat – Sun: 8am – 9pm
+</p>
+
+<a href="locations.html" class="shop-link">VIEW DETAILS</a>
+
+</div>
+
+<div class="location-card">
+
+<img src="location2.jpg">
+
+<h3>Riverfront Café</h3>
+
+<p>210 Harbor Ave</p>
+<p>Riverside, CA</p>
+
+<p class="hours">
+Mon – Fri: 7am – 8pm<br>
+Sat – Sun: 8am – 9pm
+</p>
+
+<a href="locations.html" class="shop-link">VIEW DETAILS</a>
+
+</div>
+
+</section>
+
     <script src="script.js"></script>
 </body>
+
 </html>
