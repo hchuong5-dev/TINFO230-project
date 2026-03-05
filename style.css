@@ -322,6 +322,153 @@ nav a:hover {
     opacity: 0.7;
 }
 
+/* Curated (centered) sections */
+
+.curated {
+  background: #f6f3ee;
+  padding: 90px 60px;
+}
+
+.curated-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.curated-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.curated-subtitle {
+  font-size: 14px;
+  color: #6b635c;
+  margin-bottom: 40px;
+}
+
+.curated-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+.curated-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.curated-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.curated-body {
+  padding: 18px 18px 20px;
+}
+
+.curated-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.curated-row h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 13px;
+  color: #7a5a3b;
+  white-space: nowrap;
+}
+
+.curated-desc {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #6b635c;
+  line-height: 1.5;
+}
+
+.curated-cta {
+  display: flex;
+  justify-content: center;
+}
+
+.curated-btn {
+  display: inline-block;
+  border: 1px solid #7a5a3b;
+  color: #7a5a3b;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+  background: transparent;
+}
+
+.curated-btn:hover {
+  background: #7a5a3b;
+  color: #fff;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .curated-grid {
+    grid-template-columns: 1fr;
+  }
+  .curated {
+    padding: 70px 20px;
+  }
+}
+/* WHY US SECTION */
+
+.why-us {
+    padding: 100px 60px;
+    background: #f6f3ee;
+}
+
+.whyus-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.whyus-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background: #caa46a;
+    margin-bottom: 25px;
+}
+
+.whyus-text p {
+    color: #6b635c;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.whyus-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
 /* Responsive */
 
 @media (max-width: 900px) {
@@ -335,6 +482,7 @@ nav a:hover {
     }
 
 }
+
 
 
 
