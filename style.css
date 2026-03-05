@@ -7,8 +7,7 @@
 }
 
 body {
-    font-family: 'Inter
-        ', sans-serif;
+    font-family: 'Inter', sans-serif;
     background: #f6f3ee; /* light beige background */
     color: #2b2520; /* dark brown text */
 }
@@ -29,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
 }
 
 .logo {
@@ -47,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #caa46a;; /* gold accent */
+    color: #caa46a; /* gold accent */
 }
 
 .order-btn {
@@ -55,7 +54,7 @@ nav a:hover {
     padding: 8px 18px;
     border-radius: 25px;
     background: #7a5a3b; /* add the background color */
-    color: white
+    color: white;
 }
 
 /*  HERO SECTION (HOME) */
@@ -81,6 +80,8 @@ nav a:hover {
     position: relative;
     max-width: 800px;
     padding: 20px;
+
+    color: white;
 }
 
 .est {
@@ -124,6 +125,7 @@ nav a:hover {
     border-radius: 8px;
     margin-right: 15px;
     transition: 0.3s;
+    color: white;
 }
 
 .primary-btn:hover {
@@ -136,11 +138,12 @@ nav a:hover {
     border-radius: 8px;
     border: 1px solid white;
     transition: 0.3s;
+    color: white;
 }
 
 .secondary-btn:hover {
     background: white;
-    color: 2b2520;
+    color: #2b2520;
 }
 
 /*  PAGE HEADER  */
@@ -148,7 +151,7 @@ nav a:hover {
 .page-header {
     padding: 140px 20px 60px;
     text-align: center;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #e4ded6;
 }
 
 .page-header h1 {
@@ -332,5 +335,6 @@ nav a:hover {
     }
 
 }
+
 
 
