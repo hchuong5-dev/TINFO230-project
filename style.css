@@ -420,11 +420,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* responsive */
-@media (max-width: 900px) {
-  .curated-grid {
-    grid-template-columns: 1fr;
-  }
   .curated {
     padding: 70px 20px;
   }
@@ -532,13 +527,16 @@ nav a:hover {
     color: #f6f3ee;
     padding: 60px 60px 30px;
 }
-
+/* to the left and a little tighter */
 .footer-container {
     max-width: 1200px;
-    margin: auto;
+    /* push columns to the left */
+    margin: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    
+    /* make columns tighter */
+    grid-template-columns: repeat(4, 160px);
+    gap: 30px;
 }
 
 /* footer titles */
@@ -573,7 +571,20 @@ nav a:hover {
     font-size: 13px;
     color: #b8aea2;
 }
+/* BIG BREW & BLOOM BRAND */
 
+.footer-brand {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 48px;
+    font-weight: 600;
+
+    color: rgba(255,255,255,0.08);
+}
 /* Responsive */
 
 @media (max-width: 900px) {
@@ -587,6 +598,7 @@ nav a:hover {
     }
 
 }
+
 
 
 
