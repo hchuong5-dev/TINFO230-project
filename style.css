@@ -420,6 +420,7 @@ nav a:hover {
   color: #fff;
 }
 /* responsive */
+/* make it seem like separate section colors */
 @media (max-width: 900px) {
   .curated-grid {
     grid-template-columns: 1fr;
@@ -530,6 +531,8 @@ nav a:hover {
     background: #2b2520;
     color: #f6f3ee;
     padding: 60px 60px 30px;
+    /* position to footer to see brandmark */
+    position: relative;
 }
 /* to the left and a little tighter */
 .footer-container {
@@ -602,6 +605,7 @@ nav a:hover {
     }
 
 }
+
 
 
 
