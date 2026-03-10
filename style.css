@@ -582,15 +582,15 @@ nav a:hover {
 
 .footer-brand {
     position: absolute;
-    bottom: 20px;
+    top: 70px;
     right: 40px;
 
     font-family: 'Playfair Display', serif;
 
-    font-size: 48px;
+    font-size: 70px;
     font-weight: 600;
 
-    color: rgba(255,255,255,0.08);
+    color: #f6f3ee;
 }
 /* Responsive */
 
@@ -605,6 +605,7 @@ nav a:hover {
     }
 
 }
+
 
 
 
