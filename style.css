@@ -523,6 +523,52 @@ nav a:hover {
     line-height: 1.6;
 }
 
+/* FAQ section spacing */
+
+.faq-section {
+    max-width: 900px;
+    margin: 80px auto;
+    line-height: 1.6;
+}
+
+.faq-section h3 {
+    margin-top: 30px;   /* space above each question */
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.faq-section p {
+    margin-bottom: 20px; /* space between answers */
+}
+/* SUPPORT PAGE SPACING */
+
+.support-section {
+    max-width: 900px;
+    margin: 80px auto;
+    line-height: 1.6;
+}
+
+.support-section h3 {
+    margin-top: 30px;   /* space above each section title */
+    margin-bottom: 8px;
+}
+
+.support-section p {
+    margin-bottom: 18px; /* space after paragraphs */
+}
+
+/* CONTACT PAGE SPACING */
+
+.contact-section {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.contact-section p {
+    margin-bottom: 12px;
+}
 /* FOOTER SECTION */
 
 /* FOOTER */
@@ -605,6 +651,7 @@ nav a:hover {
     }
 
 }
+
 
 
 
