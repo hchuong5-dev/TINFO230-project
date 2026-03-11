@@ -157,6 +157,7 @@ nav a:hover {
 .page-header h1 {
     font-size: 60px;
     font-weight: bold;
+    
 }
 
 /* HERO TEXT (MENU STYLE) */
@@ -524,6 +525,13 @@ nav a:hover {
 }
 
 /* FAQ section spacing */
+.faq-header h1 {
+    margin-bottom: 10px;
+}
+
+.faq-header p {
+    margin-top: 10px;
+}
 
 .faq-section {
     max-width: 900px;
@@ -542,6 +550,13 @@ nav a:hover {
 }
 /* SUPPORT PAGE SPACING */
 
+.support-header h1 {
+    margin-bottom: 10px;
+}
+
+.support-header p {
+    margin-top: 10px;
+}
 .support-section {
     max-width: 900px;
     margin: 80px auto;
@@ -651,6 +666,7 @@ nav a:hover {
     }
 
 }
+
 
 
 
