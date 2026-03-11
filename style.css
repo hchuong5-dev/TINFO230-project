@@ -186,39 +186,46 @@ nav a:hover {
     color: #6b635c;
 }
 
-/* MENU LAYOUT */
+/* MAIN LAYOUT */
 
 .menu-container{
 display:flex;
+gap:100px;
+padding:160px 80px 100px 80px;
 align-items:flex-start;
-gap:90px;
-padding:160px 80px 80px 80px;
 }
+
 
 /* SIDEBAR */
 
+.menu-sidebar{
+width:230px;
+flex-shrink:0;
+position:sticky;
+top:120px;
+height:fit-content;
+}
+
 .menu-sidebar h3{
 margin-top:30px;
-margin-bottom:10px;
-font-size:16px;
-font-weight:600;
-color:#2b2520;
-border-bottom:1px solid #e4ded6;
-padding-bottom:6px;
+margin-bottom:12px;
+font-size:14px;
+letter-spacing:1px;
+color:#7a5a3b;
+text-transform:uppercase;
 }
 
 .menu-sidebar a{
 display:block;
-margin-bottom:8px;
+margin-bottom:12px;
 font-size:14px;
 color:#6b635c;
-padding:4px 0;
-transition:0.25s;
+transition:0.3s;
 }
 
 .menu-sidebar a:hover{
 color:#caa46a;
-padding-left:6px;
+transform:translateX(3px);
 }
 
 
@@ -226,63 +233,74 @@ padding-left:6px;
 
 .menu-content{
 flex:1;
-max-width:950px;
+max-width:900px;
 }
 
 .menu-content h2{
-margin-bottom:35px;
-border-bottom:1px solid #1f2a30;
+font-family:'Playfair Display', serif;
+font-size:32px;
+margin-bottom:40px;
+border-bottom:1px solid #e4ded6;
 padding-bottom:10px;
-font-size:28px;
 }
 
 
-/* MENU GRID */
+/* GRID LAYOUT */
 
 .menu-grid{
-display:flex;
-gap:140px;
-margin-bottom:90px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+margin-bottom:80px;
 }
 
 .menu-column{
 display:flex;
 flex-direction:column;
+gap:25px;
 }
 
 
-/* MENU ITEM */
+/* MENU ITEM CARD */
 
 .menu-item{
 display:flex;
 align-items:center;
-gap:28px;
-margin-bottom:40px;
-padding:10px;
-border-radius:10px;
-transition:0.3s;
-cursor:pointer;
-}
+gap:22px;
 
-.menu-item img{
-width:110px;
-height:110px;
+background:white;
+padding:14px 18px;
 border-radius:12px;
-object-fit:cover;
-box-shadow:0 8px 18px rgba(0,0,0,0.12);
-}
 
-.menu-item span{
-font-size:18px;
-font-weight:500;
-letter-spacing:0.5px;
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+
+cursor:pointer;
+transition:0.25s;
 }
 
 .menu-item:hover{
-color:#d4a017;
-transform:translateX(4px);
+transform:translateY(-3px);
+box-shadow:0 14px 30px rgba(0,0,0,0.10);
 }
 
+
+/* BIGGER IMAGES */
+
+.menu-item img{
+width:85px;
+height:85px;
+border-radius:50%;
+object-fit:cover;
+}
+
+
+/* TEXT */
+
+.menu-item span{
+font-size:16px;
+font-weight:500;
+color:#2b2520;
+}
 
 
 /* LOCATIONS PAGE */
@@ -822,6 +840,7 @@ transform:translateX(4px);
 }
 
 }
+
 
 
 
