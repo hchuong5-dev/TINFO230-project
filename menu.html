@@ -1,29 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew & Bloom</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">☕ BREW & BLOOM</div>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="menu.html">MENU</a>
+    <a href="story.html">ABOUT</a>
+    <a href="location.html">LOCATION</a>
+    <a href="#" class="order-btn">ORDER ONLINE</a>
+  </nav>
+</header>
+
+
 <div class="menu-container">
 
-<!-- SIDEBAR (LEFT) -->
-
+<!-- LEFT SIDEBAR -->
 <div class="menu-sidebar">
 
-<h3>DRINKS</h3>
-<a href="#coffee">Coffee Drinks</a>
+<h3>Seasonal Drinks</h3>
+<a href="#seasonal">Chestnut Praline Latte</a>
+<a href="#seasonal">Cinnamon Spice Latte</a>
+<a href="#seasonal">White Chocolate Mocha</a>
+<a href="#seasonal">Peppermint Mocha</a>
 
-<h3>SEASONAL</h3>
-<a href="#seasonal">Seasonal Drinks</a>
+<h3>Drinks</h3>
+<a href="#drinks">Espresso</a>
+<a href="#drinks">Cappuccino</a>
+<a href="#drinks">Latte</a>
+<a href="#drinks">Americano</a>
+<a href="#drinks">Mocha</a>
+<a href="#drinks">Cold Brew</a>
 
-<h3>FOOD</h3>
-<a href="#pastries">Pastries</a>
-<a href="#bakeries">Bakeries</a>
+<h3>Food</h3>
+<a href="#food">Croissant</a>
+<a href="#food">Chocolate Croissant</a>
+<a href="#food">Blueberry Muffin</a>
+<a href="#food">Banana Bread</a>
+<a href="#food">Cinnamon Roll</a>
+<a href="#food">Butter Scone</a>
 
 </div>
 
 
-<!-- MENU CONTENT (RIGHT) -->
-
 <div class="menu-content">
 
-<!-- COFFEE DRINKS -->
+<!-- SEASONAL DRINKS -->
 
-<h2 id="coffee">Coffee Drinks</h2>
+<h2 id="seasonal">Seasonal Drinks</h2>
+
+<div class="menu-grid">
+
+<div class="menu-column">
+
+<div class="menu-item">
+<img src="images/chestnut.jpg">
+<span>Chestnut Praline Latte</span>
+</div>
+
+<div class="menu-item">
+<img src="images/cinnamon.jpg">
+<span>Cinnamon Spice Latte</span>
+</div>
+
+</div>
+
+<div class="menu-column">
+
+<div class="menu-item">
+<img src="images/white-mocha.jpg">
+<span>White Chocolate Mocha</span>
+</div>
+
+<div class="menu-item">
+<img src="images/peppermint.jpg">
+<span>Peppermint Mocha</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- DRINKS -->
+
+<h2 id="drinks">Drinks</h2>
 
 <div class="menu-grid">
 
@@ -59,8 +130,8 @@
 </div>
 
 <div class="menu-item">
-<img src="images/caramel-latte.jpg">
-<span>Caramel Latte</span>
+<img src="images/coldbrew.jpg">
+<span>Cold Brew</span>
 </div>
 
 </div>
@@ -68,56 +139,9 @@
 </div>
 
 
-<!-- SEASONAL DRINKS -->
+<!-- FOOD -->
 
-<h2 id="seasonal">Seasonal Drinks</h2>
-
-<div class="menu-grid">
-
-<div class="menu-column">
-
-<div class="menu-item">
-<img src="images/pumpkin-latte.jpg">
-<span>Pumpkin Spice Latte</span>
-</div>
-
-<div class="menu-item">
-<img src="images/maple-latte.jpg">
-<span>Maple Latte</span>
-</div>
-
-<div class="menu-item">
-<img src="images/peppermint-mocha.jpg">
-<span>Peppermint Mocha</span>
-</div>
-
-</div>
-
-<div class="menu-column">
-
-<div class="menu-item">
-<img src="images/honey-latte.jpg">
-<span>Honey Cinnamon Latte</span>
-</div>
-
-<div class="menu-item">
-<img src="images/iced-caramel.jpg">
-<span>Iced Caramel Latte</span>
-</div>
-
-<div class="menu-item">
-<img src="images/vanilla-latte.jpg">
-<span>Vanilla Latte</span>
-</div>
-
-</div>
-
-</div>
-
-
-<!-- PASTRIES -->
-
-<h2 id="pastries">Pastries</h2>
+<h2 id="food">Food</h2>
 
 <div class="menu-grid">
 
@@ -125,7 +149,7 @@
 
 <div class="menu-item">
 <img src="images/croissant.jpg">
-<span>Butter Croissant</span>
+<span>Croissant</span>
 </div>
 
 <div class="menu-item">
@@ -134,20 +158,11 @@
 </div>
 
 <div class="menu-item">
-<img src="images/almond-croissant.jpg">
-<span>Almond Croissant</span>
+<img src="images/muffin.jpg">
+<span>Blueberry Muffin</span>
 </div>
 
 </div>
-
-</div>
-
-
-<!-- BAKERIES -->
-
-<h2 id="bakeries">Bakeries</h2>
-
-<div class="menu-grid">
 
 <div class="menu-column">
 
@@ -157,18 +172,22 @@
 </div>
 
 <div class="menu-item">
-<img src="images/blueberry-muffin.jpg">
-<span>Blueberry Muffin</span>
-</div>
-
-<div class="menu-item">
 <img src="images/cinnamon-roll.jpg">
 <span>Cinnamon Roll</span>
 </div>
 
+<div class="menu-item">
+<img src="images/scone.jpg">
+<span>Butter Scone</span>
 </div>
 
 </div>
 
 </div>
+
 </div>
+
+</div>
+
+</body>
+</html>
