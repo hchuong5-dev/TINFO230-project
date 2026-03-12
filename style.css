@@ -12,6 +12,12 @@ body {
     color: #2b2520; /* dark brown text */
 }
 
+img{
+max-width:100%;
+height:auto;
+}
+
+
 a {
     text-decoration: none;
     color: inherit;
@@ -268,14 +274,17 @@ nav a:hover {
 
 /* MAIN LAYOUT */
 
-.menu-container{
+..menu-container{
 display:flex;
 gap:80px;
 padding:130px 90px 110px;
 align-items:flex-start;
+flex-wrap:wrap;
+justify-content:center;
 
 background:linear-gradient(to bottom,#f6f3ee,#efe7dc);
 }
+
 
 
 
@@ -587,10 +596,11 @@ color:#6b635c;
 
 .curated-card img {
   width: 100%;
-  height: 400px;
+  height: 260px;
   object-fit: cover;
-  object-position: 50% 15%; /* keeps centered and show more of top */
+  object-position: center;
 }
+
 
 .curated-body {
   padding: 18px 18px 20px;
@@ -798,10 +808,11 @@ background:#4e392a;
 }
 
 .seasonal-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 }
+
 
 .seasonal-card {
     background: #ffffff;
@@ -912,16 +923,15 @@ background:#4e392a;
     position: relative;
 }
 /* to the left and a little tighter */
+
 .footer-container {
-    max-width: 1200px;
-    /* push columns to the left */
-    margin: 0;
-    display: grid;
-    
-    /* make columns tighter */
-    grid-template-columns: repeat(4, 160px);
-    gap: 30px;
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:30px;
 }
+
 
 
 /* =========================
@@ -1053,6 +1063,17 @@ background:#4e392a;
 /* MOBILE NAVIGATION */
 
 @media (max-width:768px){
+.curated-grid{
+grid-template-columns:1fr;
+}
+
+.order-grid{
+grid-template-columns:1fr;
+}
+
+.seasonal-grid{
+grid-template-columns:1fr;
+}
 
 .hamburger{
 display:block;
@@ -1154,6 +1175,7 @@ display:flex;
         font-size: 40px;
     }
 }
+
 
 
 
