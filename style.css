@@ -18,6 +18,13 @@ a {
 }
 
 /*  NAVBAR  */
+.home .logo {
+    color: white; /* for home */
+}
+
+.home nav a {
+    color: white; /* for home */
+}
 
 header {
     position: absolute;
@@ -1000,6 +1007,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
