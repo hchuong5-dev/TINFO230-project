@@ -1,4 +1,4 @@
-z<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@ z<!DOCTYPE html>
 <body>
 
 <header>
-  <div class="logo">☕ Brew & Bloom</div>
+<div class="logo">☕ Brew & Bloom</div>
 
 <nav>
 <a href="index.html">HOME</a>
@@ -24,13 +24,14 @@ z<!DOCTYPE html>
 </nav>
 </header>
 
-
 <section class="order-section">
 
 <h1>Order Online</h1>
 <p class="order-subtitle">Select your favorite drinks and pastries</p>
 
-  <!-- SEASONAL SPECIALS -->
+
+<!-- SEASONAL SPECIALS -->
+
 <h2>Seasonal Specials</h2>
 
 <div class="order-grid">
@@ -39,33 +40,35 @@ z<!DOCTYPE html>
 <img src="image/seasonal1.jpg">
 <h3>Chestnut Praline Latte</h3>
 <p>$5.95</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Chestnut Praline Latte',5.95,'image/seasonal1.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="image/seasonal2.jpg">
 <h3>White Chocolate Mocha</h3>
 <p>$5.85</p>
-<button>Add to Order</button>
+<button onclick="addToCart('White Chocolate Mocha',5.85,'image/seasonal2.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="image/seasonal3.jpg">
 <h3>Cinnamon Spice Latte</h3>
 <p>$5.75</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Cinnamon Spice Latte',5.75,'image/seasonal3.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="image/seasonal4.jpg">
 <h3>Peppermint Mocha</h3>
 <p>$5.95</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Peppermint Mocha',5.95,'image/seasonal4.jpg')">Add to Order</button>
 </div>
 
 </div>
+
 
 <!-- DRINKS -->
+
 <h2>Drinks</h2>
 
 <div class="order-grid">
@@ -74,42 +77,42 @@ z<!DOCTYPE html>
 <img src="image/espresso.jpg">
 <h3>Espresso</h3>
 <p>$3.50</p>
-<button onclick="addToCart('Espresso',3.50,'images/espresso.jpg')">Add to Order</button>
+<button onclick="addToCart('Espresso',3.50,'image/espresso.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="image/cappuccino.jpg">
 <h3>Cappuccino</h3>
 <p>$4.75</p>
-<button onclick="addToCart('Cappuccino',4.75,'images/cappuccino.jpg')">Add to Order</button>
+<button onclick="addToCart('Cappuccino',4.75,'image/cappuccino.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="image/latte.jpg">
 <h3>Latte</h3>
 <p>$5.00</p>
-<button onclick="addToCart('Latte',5.00,'images/latte.jpg')">Add to Order</button>
+<button onclick="addToCart('Latte',5.00,'image/latte.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="image/americano.jpg">
 <h3>Americano</h3>
 <p>$3.75</p>
-<button onclick="addToCart('Americano',3.75,'images/americano.jpg')">Add to Order</button>
+<button onclick="addToCart('Americano',3.75,'image/americano.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="image/mocha.jpg">
 <h3>Mocha</h3>
 <p>$5.25</p>
-<button onclick="addToCart('Mocha',5.25,'images/mocha.jpg')">Add to Order</button>
+<button onclick="addToCart('Mocha',5.25,'image/mocha.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="image/coldbrew.jpg">
 <h3>Cold Brew</h3>
 <p>$4.75</p>
-<button onclick="addToCart('Cold Brew',4.75,'images/coldbrew.jpg')">Add to Order</button>
+<button onclick="addToCart('Cold Brew',4.75,'image/coldbrew.jpg')">Add to Order</button>
 </div>
 
 </div>
@@ -159,10 +162,10 @@ z<!DOCTYPE html>
 </div>
 
 <div class="order-item">
-<img src="image/bananabreadd.jpg">
+<img src="image/bananabread.jpg">
 <h3>Banana Bread</h3>
 <p>$3.95</p>
-<button onclick="addToCart('Banana Bread',3.95,'image/bananabreadd.jpg')">Add to Order</button>
+<button onclick="addToCart('Banana Bread',3.95,'image/bananabread.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
@@ -198,7 +201,7 @@ qty:1
 
 localStorage.setItem("cart", JSON.stringify(cart));
 
-alert(`${name} added to cart!`);
+alert(name + " added to cart!");
 
 }
 
