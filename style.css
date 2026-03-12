@@ -677,6 +677,13 @@ background:#4e392a;
 
 /* SEASONAL FEATURE MENU */
 
+.page-header h1 {
+    font-family: 'Playfair Display', serif; /*seasonal file header design */
+    font-size: 64px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+} 
+
 .seasonal-feature {
     padding: 80px 60px;
 }
@@ -993,6 +1000,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
