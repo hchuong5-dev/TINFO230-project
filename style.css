@@ -548,6 +548,64 @@ font-family:'Inter', sans-serif;
     padding: 70px 20px;
   }
 }
+
+/* ORDER PAGE */
+
+.order-container{
+max-width:1100px;
+margin:80px auto;
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.order-card{
+background:white;
+padding:20px;
+
+border-radius:12px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.order-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.order-card h3{
+font-family:'Playfair Display', serif;
+margin-bottom:8px;
+}
+
+.order-card p{
+color:#7a5a3b;
+margin-bottom:12px;
+}
+
+.order-card button{
+background:#7a5a3b;
+color:white;
+
+border:none;
+padding:10px 18px;
+
+border-radius:8px;
+cursor:pointer;
+}
+
+.order-card button:hover{
+background:#6a4d33;
+}
+
+
 /* WHY US SECTION */
 
 .why-us {
@@ -908,6 +966,7 @@ font-family:'Inter', sans-serif;
 }
 
 }
+
 
 
 
