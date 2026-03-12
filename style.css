@@ -1106,61 +1106,105 @@ display:flex;
 @media (max-width:768px){
 
 .footer-brand{
-font-size:23px;
-right:20px;
-top:90px;
+    position: static;
+    font-size:18px;
+    text-align:center;
+    margin-top:15px;
 }
 
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .curated-grid,
-    .seasonal-grid,
-    .whyus-container,
-    .footer-container {
-        grid-template-columns: 1fr;
-    }
-
-    .menu-container,
-    .menu-grid,
-    .location-section {
-        flex-direction: column;
-    }
+nav {
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.curated-grid,
+.seasonal-grid,
+.whyus-container,
+.footer-container {
+    grid-template-columns: 1fr;
+}
+
+.menu-container,
+.menu-grid,
+.location-section {
+    flex-direction: column;
+}
+}
+
 
 /* =========================
    MOBILE
 ========================= */
 @media (max-width: 480px) {
 
-    header {
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px;
-    }
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+  }
 
-    .hero h1 {
-        font-size: 36px;
-    }
+  .hero h1 {
+    font-size: 32px;
+  }
 
-    .hero h2 {
-        font-size: 30px;
-    }
+  .hero h2 {
+    font-size: 26px;
+  }
 
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .footer-brand {
-        position: static;
-        text-align: center;
-        font-size: 40px;
-    }
+  /* FIX MENU WIDTH */
+  .menu-container{
+    padding:60px 20px;
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .menu-card{
+    width:100%;
+    max-width:340px;
+    margin:0 auto;
+  }
+
+  /* FIX SECTION TITLES OVERLAPPING */
+  h2{
+    position:static;
+    text-align:center;
+    margin-bottom:20px;
+  }
+
+  /* OUR STORY + LOCATION STACK */
+  .story-container,
+  .location-container{
+    flex-direction:column;
+    text-align:center;
+    padding:40px 20px;
+    gap:20px;
+  }
+
+  /* IMAGE FITS MOBILE */
+  .story-container img,
+  .location-container img{
+    width:100%;
+    height:auto;
+  }
+
+  /* FOOTER FIX */
+  footer{
+    text-align:center;
+    padding:40px 20px;
+  }
+
+  .footer-brand {
+    position: static;
+    text-align: center;
+    font-size: 28px;
+  }
 }
 
 
