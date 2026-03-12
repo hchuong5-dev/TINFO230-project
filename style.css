@@ -551,58 +551,79 @@ font-family:'Inter', sans-serif;
 
 /* ORDER PAGE */
 
-.order-container{
+.order-section{
+padding:80px 60px;
 max-width:1100px;
-margin:80px auto;
+margin:auto;
+text-align:center;
+}
 
+.order-section h1{
+font-family:'Playfair Display', serif;
+font-size:42px;
+margin-bottom:10px;
+}
+
+.order-subtitle{
+color:#6b635c;
+margin-bottom:40px;
+}
+
+.order-section h2{
+margin-top:60px;
+margin-bottom:25px;
+font-family:'Playfair Display', serif;
+font-size:28px;
+}
+
+.order-grid{
 display:grid;
-grid-template-columns:repeat(4,1fr);
+grid-template-columns:repeat(3,1fr);
 gap:30px;
 }
 
-.order-card{
+.order-item{
 background:white;
-padding:20px;
-
 border-radius:12px;
-
-text-align:center;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+padding:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+transition:0.2s;
 }
 
-.order-card img{
+.order-item:hover{
+transform:translateY(-4px);
+}
+
+.order-item img{
 width:100%;
-height:200px;
+height:180px;
 object-fit:cover;
-
-border-radius:10px;
-margin-bottom:15px;
-}
-
-.order-card h3{
-font-family:'Playfair Display', serif;
-margin-bottom:8px;
-}
-
-.order-card p{
-color:#7a5a3b;
+border-radius:8px;
 margin-bottom:12px;
 }
 
-.order-card button{
-background:#7a5a3b;
-color:white;
-
-border:none;
-padding:10px 18px;
-
-border-radius:8px;
-cursor:pointer;
+.order-item h3{
+font-size:18px;
+margin-bottom:6px;
 }
 
-.order-card button:hover{
-background:#6a4d33;
+.order-item p{
+color:#6b635c;
+margin-bottom:12px;
+}
+
+.order-item button{
+background:#6b4f3c;
+color:white;
+border:none;
+padding:8px 18px;
+border-radius:20px;
+cursor:pointer;
+font-size:14px;
+}
+
+.order-item button:hover{
+background:#4e392a;
 }
 
 
@@ -966,6 +987,7 @@ background:#6a4d33;
 }
 
 }
+
 
 
 
