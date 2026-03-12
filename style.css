@@ -279,8 +279,6 @@ display:flex;
 gap:80px;
 padding:130px 90px 110px;
 align-items:flex-start;
-flex-wrap:wrap;
-justify-content:center;
 background:linear-gradient(to bottom,#f6f3ee,#efe7dc);
 }
 
@@ -374,17 +372,12 @@ font-size:24px;
 color:#7a5a3b;
 }
 
-
-
 .menu-container{
 display:flex;
 gap:100px;
 padding:120px 80px 100px 80px;
 align-items:flex-start;
 }
-
-
-
 
 
 /* GRID LAYOUT */
@@ -596,7 +589,7 @@ color:#6b635c;
 
 .curated-card img {
   width: 100%;
-  height: 260px;
+  height: 400px;
   object-fit: cover;
   object-position: 50% 15%;  
 }
@@ -808,11 +801,10 @@ background:#4e392a;
 }
 
 .seasonal-grid {
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
 }
-
 
 .seasonal-card {
     background: #ffffff;
@@ -911,29 +903,6 @@ gap:30px;
 .contact-section p {
     margin-bottom: 12px;
 }
-/* FOOTER SECTION */
-
-/* FOOTER */
-
-.footer {
-    background: #2b2520;
-    color: #f6f3ee;
-    padding: 60px 60px 30px;
-    /* position to footer to see brandmark */
-    position: relative;
-}
-/* to the left and a little tighter */
-
-.footer-container {
-    max-width: 1200px;
-    /* push columns to the left */
-    margin: 0;
-    display: grid;
-    
-    /* make columns tighter */
-    grid-template-columns: repeat(4, 160px);
-    gap: 30px;
-
 
 
 /* =========================
@@ -999,7 +968,29 @@ height:300px;
 }
 
 /* footer links */
+/* FOOTER SECTION */
 
+/* FOOTER */
+
+.footer {
+    background: #2b2520;
+    color: #f6f3ee;
+    padding: 60px 60px 30px;
+    /* position to footer to see brandmark */
+    position: relative;
+}
+/* to the left and a little tighter */
+
+.footer-container {
+    max-width: 1200px;
+    /* push columns to the left */
+    margin: 0;
+    display: grid;
+    
+    /* make columns tighter */
+    grid-template-columns: repeat(4, 160px);
+    gap: 30px;
+    
 .footer-column a {
     display: block;
     font-size: 14px;
@@ -1025,9 +1016,13 @@ height:300px;
 /* BIG BREW & BLOOM BRAND */
 
 .footer-brand {
+    position: absolute;
+    top: 70px;
+    right: 60px;
     font-family: 'Playfair Display', serif;
     font-size: 70px;
     font-weight: 600;
+    
     color: #f6f3ee;
 }
 /* HAMBURGER ICON */
@@ -1108,7 +1103,6 @@ padding:60px 20px;
 height:260px;
 }
 
-}
 
 /* =========================
    TABLET
@@ -1165,6 +1159,7 @@ height:260px;
         font-size: 40px;
     }
 }
+
 
 
 
