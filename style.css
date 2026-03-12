@@ -27,7 +27,7 @@ a {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     padding: 25px 60px;
@@ -1130,6 +1130,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
