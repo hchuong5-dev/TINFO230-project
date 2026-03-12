@@ -1103,10 +1103,13 @@ display:flex;
 /* =========================
    TABLET
 ========================= */
-@media (max-width: 768px) {
+@media (max-width:768px){
 
- .footer-brand{
-position:static;
+.footer-brand{
+position:relative;
+right:auto;
+top:auto;
+display:block;
 text-align:center;
 font-size:50px;
 margin-top:30px;
@@ -1162,6 +1165,7 @@ margin-top:30px;
         font-size: 40px;
     }
 }
+
 
 
 
