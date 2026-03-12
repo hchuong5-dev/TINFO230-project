@@ -676,9 +676,10 @@ font-size:28px;
 
 .order-grid{
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
+
 
 .order-item{
 background:white;
@@ -694,12 +695,13 @@ transform:translateY(-4px);
 
 .order-item img{
 width:100%;
-height:180px;
+aspect-ratio:1/1;
 object-fit:cover;
 border-radius:8px;
 margin-bottom:12px;
-object-position: 50% 40%;
+object-position:center;
 }
+
 
 .order-item h3{
 font-size:18px;
@@ -1131,6 +1133,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
