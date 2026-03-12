@@ -499,7 +499,7 @@ background:#4e392a;
 
 .curated-card img {
   width: 100%;
-  height: 350px;   /* increase px to show nicely */
+  height: 400px;   /* increase px to show nicely */
   object-fit: cover;
 }
 
@@ -679,6 +679,8 @@ background:#4e392a;
 
 .whyus-image img {
     width: 100%;
+    height: 420px;      /* control the height */
+    object-fit: cover;  /* crops the image nicely */
     border-radius: 12px;
 }
 
@@ -1007,6 +1009,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
