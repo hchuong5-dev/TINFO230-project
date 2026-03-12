@@ -944,6 +944,42 @@ background:#4e392a;
 
     color: #f6f3ee;
 }
+/* HAMBURGER ICON */
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* MOBILE hamburger MENU */
+
+@media (max-width: 768px) {
+
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 40px;
+        background: #2b2520;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -1012,6 +1048,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
