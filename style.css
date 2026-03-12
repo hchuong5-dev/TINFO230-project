@@ -695,7 +695,6 @@ transform:translateY(-4px);
 
 .order-item img{
 width:100%;
-height:200px
 aspect-ratio:1/1;
 object-fit:cover;
 border-radius:8px;
@@ -1134,6 +1133,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
