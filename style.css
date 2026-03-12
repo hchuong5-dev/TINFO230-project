@@ -1,4 +1,4 @@
-/*  GLOBAL RESET  */
+ /*  GLOBAL RESET  */
 
 * {
     margin: 0;
@@ -11,12 +11,6 @@ body {
     background: #f6f3ee; /* light beige background */
     color: #2b2520; /* dark brown text */
 }
-
-img{
-max-width:100%;
-height:auto;
-}
-
 
 a {
     text-decoration: none;
@@ -279,10 +273,9 @@ display:flex;
 gap:80px;
 padding:130px 90px 110px;
 align-items:flex-start;
+
 background:linear-gradient(to bottom,#f6f3ee,#efe7dc);
 }
-
-
 
 
 
@@ -372,12 +365,17 @@ font-size:24px;
 color:#7a5a3b;
 }
 
+
+
 .menu-container{
 display:flex;
 gap:100px;
 padding:120px 80px 100px 80px;
 align-items:flex-start;
 }
+
+
+
 
 
 /* GRID LAYOUT */
@@ -591,9 +589,8 @@ color:#6b635c;
   width: 100%;
   height: 400px;
   object-fit: cover;
-  object-position: 50% 15%;  
+  object-position: 50% 15%; /* keeps centered and show more of top */
 }
-
 
 .curated-body {
   padding: 18px 18px 20px;
@@ -709,7 +706,7 @@ aspect-ratio:1/1;
 object-fit:cover;
 border-radius:8px;
 margin-bottom:12px;
-object-position:50%, 40%;
+object-position:center;
 }
 
 
@@ -903,6 +900,28 @@ background:#4e392a;
 .contact-section p {
     margin-bottom: 12px;
 }
+/* FOOTER SECTION */
+
+/* FOOTER */
+
+.footer {
+    background: #2b2520;
+    color: #f6f3ee;
+    padding: 60px 60px 30px;
+    /* position to footer to see brandmark */
+    position: relative;
+}
+/* to the left and a little tighter */
+.footer-container {
+    max-width: 1200px;
+    /* push columns to the left */
+    margin: 0;
+    display: grid;
+    
+    /* make columns tighter */
+    grid-template-columns: repeat(4, 160px);
+    gap: 30px;
+}
 
 
 /* =========================
@@ -916,9 +935,11 @@ background:#4e392a;
 .story-container {
     max-width: 1100px;
     margin: auto;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
+
     align-items: center;
 }
 
@@ -967,28 +988,17 @@ background:#4e392a;
     line-height: 1.6;
 }
 
-/* FOOTER */
 
-.footer {
-    background: #2b2520;
-    color: #f6f3ee;
-    padding: 60px 60px 30px;
-    position: relative;
-}
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 160px);
-    gap: 30px;
-}
+/* footer titles */
 
 .footer-column h3 {
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     margin-bottom: 18px;
 }
+
+/* footer links */
 
 .footer-column a {
     display: block;
@@ -1002,6 +1012,8 @@ background:#4e392a;
     color: #caa46a;
 }
 
+/* bottom copyright */
+
 .footer-bottom {
     text-align: center;
     margin-top: 40px;
@@ -1010,16 +1022,21 @@ background:#4e392a;
     font-size: 13px;
     color: #b8aea2;
 }
+/* BIG BREW & BLOOM BRAND */
 
 .footer-brand {
     position: absolute;
     top: 70px;
-    right: 60px;
+    right: 40px;
+
     font-family: 'Playfair Display', serif;
+
     font-size: 70px;
     font-weight: 600;
+
     color: #f6f3ee;
 }
+/* HAMBURGER ICON */
 
 /* HAMBURGER ICON */
 
@@ -1030,66 +1047,45 @@ background:#4e392a;
     color: white;
 }
 
+
 /* MOBILE hamburger MENU */
 
-@media (max-width: 768px) {
-    .curated-grid {
-        grid-template-columns: 1fr;
-    }
+/* MOBILE NAVIGATION */
 
-    .order-grid {
-        grid-template-columns: 1fr;
-    }
+@media (max-width:768px){
 
-    .seasonal-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 25px;
-        left: auto;
-        
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background: #2b2520;
-        padding: 20px;
-    }
-
-    nav a {
-        margin: 10px 0;
-        font-size: 16px;
-    }
-
-    nav.show {
-        display: flex;
-    }
-
-    .whyus-container,
-    .footer-container {
-        grid-template-columns: 1fr;
-    }
-
-    .menu-container,
-    .location-section {
-        flex-direction: column;
-    }
-
-    .footer-brand {
-        position: static;
-        text-align: left;
-        font-size: 40px;
-        margin-top: 20px;
-    }
+.hamburger{
+display:block;
+position:absolute;
+left:20px;
+top:25px;
 }
+
+nav{
+display:none;
+flex-direction:column;
+
+position:absolute;
+top:80px;
+left:0;
+
+width:100%;
+background:#2b2520;
+
+padding:20px;
+}
+
+nav a{
+margin:10px 0;
+font-size:16px;
+}
+
+nav.show{
+display:flex;
+}
+
+}
+
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -1103,8 +1099,35 @@ background:#4e392a;
     }
 }
 
-/* MOBILE */
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .curated-grid,
+    .seasonal-grid,
+    .whyus-container,
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-container,
+    .menu-grid,
+    .location-section {
+        flex-direction: column;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 480px) {
+
     header {
         flex-direction: column;
         gap: 10px;
@@ -1131,6 +1154,30 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
