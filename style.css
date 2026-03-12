@@ -458,7 +458,7 @@ background:#4e392a;
 
 
 /* Curated (centered) sections */
-
+/* seasonal on home */
 .curated {
   background: #f6f3ee;
   padding: 90px 60px;
@@ -707,8 +707,8 @@ background:#4e392a;
 
 .seasonal-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
 }
 
 .seasonal-card {
@@ -720,8 +720,9 @@ background:#4e392a;
 
 .seasonal-card img {
     width: 100%;
-    height: 300px;      /* controls size */
+    height: 400px;      /* controls size */
     object-fit: cover;  /* prevents stretching */
+    object-position: 50% 15%;
     border-radius: 12px;
 }
 
@@ -1011,6 +1012,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
