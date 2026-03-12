@@ -6,10 +6,9 @@ window.addEventListener("scroll", function () {
     } else {
         header.style.background = "transparent";
     }
-<script>
-function toggleMenu() {
-  document.getElementById("nav-menu").classList.toggle("show");
-}
-</script>
                         
 });
+
+function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("show");
+}
