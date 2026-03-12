@@ -926,8 +926,8 @@ background:#4e392a;
 
     color: #f6f3ee;
 }
-/* Responsive */
 
+/* Responsive */
 @media (max-width: 900px) {
     .location-section {
         flex-direction: column;
@@ -937,6 +937,8 @@ background:#4e392a;
     .location-card img {
         height: 400px;
     }
+}
+
 /* =========================
    TABLET
 ========================= */
@@ -959,7 +961,6 @@ background:#4e392a;
     .location-section {
         flex-direction: column;
     }
-
 }
 
 /* =========================
@@ -992,10 +993,9 @@ background:#4e392a;
         text-align: center;
         font-size: 40px;
     }
-
 }
 
-}
+
 
 
 
