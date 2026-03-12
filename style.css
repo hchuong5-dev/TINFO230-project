@@ -27,7 +27,7 @@ a {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     padding: 25px 60px;
@@ -130,15 +130,18 @@ nav a:hover {
 
 /*  HERO SECTION (HOME) */
 
-.hero {
-    height: 100vh;
-    background: url("image/coffee-hero.jpg") center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
+.hero{
+    height:100vh;
+    background:url("image/coffee-hero.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    padding-top:80px;
 }
+
+
 
 .overlay {
     position: absolute;
@@ -1127,6 +1130,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
