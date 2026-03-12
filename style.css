@@ -925,12 +925,14 @@ gap:30px;
 /* to the left and a little tighter */
 
 .footer-container {
-max-width:1200px;
-margin:auto;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:30px;
-}
+    max-width: 1200px;
+    /* push columns to the left */
+    margin: 0;
+    display: grid;
+    
+    /* make columns tighter */
+    grid-template-columns: repeat(4, 160px);
+    gap: 30px;
 
 
 
@@ -1169,6 +1171,7 @@ height:260px;
         font-size: 40px;
     }
 }
+
 
 
 
