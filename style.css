@@ -1025,15 +1025,9 @@ height:300px;
 /* BIG BREW & BLOOM BRAND */
 
 .footer-brand {
-    position: absolute;
-    top: 70px;
-    right: 40px;
-
     font-family: 'Playfair Display', serif;
-
     font-size: 70px;
     font-weight: 600;
-
     color: #f6f3ee;
 }
 /* HAMBURGER ICON */
@@ -1171,6 +1165,7 @@ height:260px;
         font-size: 40px;
     }
 }
+
 
 
 
