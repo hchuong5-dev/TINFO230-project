@@ -370,76 +370,85 @@ font-family:'Inter', sans-serif;
 }
 
 
-
 /* LOCATIONS PAGE */
 
-.location-hero {
-    height: 70vh;
-    background: url("location-hero.jpg") center/cover no-repeat;
-    position: relative;
+.location-section{
+padding:80px 60px;
+background:#f7f4ef;
 }
 
-.location-overlay {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: #7a5a3b;
-    text-align: center;
-    padding: 30px 0;
-    color: white
+.location-container{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:40px;
 }
 
-.location-overlay h1 {
-    letter-spacing: 3px;
-    font-weight: 500;
+.location-card{
+background:white;
+border-radius:14px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.25s;
 }
 
-.location-section {
-    background: #f6f3ee;
-    padding: 80px 60px;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
+.location-card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 30px rgba(0,0,0,0.12);
 }
 
-.location-card {
-    text-align: center;
-    max-width: 350px;
+.location-card img{
+width:100%;
+height:260px;
+object-fit:cover;
 }
 
-.location-card img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    margin-bottom: 30px;
+.location-info{
+padding:25px;
+text-align:center;
 }
 
-.location-card h3 {
-    margin-bottom: 20px;
-    font-weight: 600;
+.location-info h3{
+font-family:'Playfair Display', serif;
+font-size:22px;
+margin-bottom:15px;
+color:#2b2520;
 }
 
-.location-card p {
-    color: #6b635c;
-    margin-bottom: 10px;
-    font-size: 14px;
+.address{
+color:#6b635c;
+margin-bottom:10px;
+line-height:1.6;
 }
 
-.hours {
-    margin-top: 15px;
+.phone{
+font-size:14px;
+margin-bottom:10px;
+color:#6b635c;
 }
 
-.shop-link {
-    display: inline-block;
-    margin-top: 15px;
-    color: #caa46a;
-    font-size: 13px;
-    letter-spacing: 1px;
+.hours{
+font-size:14px;
+margin-bottom:18px;
+color:#6b635c;
 }
 
-.shop-link:hover {
-    opacity: 0.7;
+.shop-link{
+display:inline-block;
+padding:8px 20px;
+border-radius:20px;
+background:#6b4f3c;
+color:white;
+text-decoration:none;
+font-size:14px;
+transition:0.2s;
 }
+
+.shop-link:hover{
+background:#4e392a;
+}
+
 
 /* Curated (centered) sections */
 
@@ -987,6 +996,7 @@ background:#4e392a;
 }
 
 }
+
 
 
 
