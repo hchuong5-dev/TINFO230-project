@@ -698,7 +698,7 @@ height:180px;
 object-fit:cover;
 border-radius:8px;
 margin-bottom:12px;
-object-position: 50% 15%;
+object-position: 50% 40%;
 }
 
 .order-item h3{
@@ -1131,6 +1131,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
