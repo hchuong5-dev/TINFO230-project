@@ -598,7 +598,7 @@ color:#6b635c;
   width: 100%;
   height: 260px;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 15%;  
 }
 
 
@@ -1169,6 +1169,7 @@ height:260px;
         font-size: 40px;
     }
 }
+
 
 
 
