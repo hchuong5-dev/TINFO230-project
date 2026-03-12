@@ -492,9 +492,9 @@ background:#4e392a;
 
 .curated-card img {
   width: 100%;
-  height: 230px;
+  height: 300px;
   object-fit: cover;
-  display: block;
+  object-position: center;
 }
 
 .curated-body {
@@ -994,6 +994,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
