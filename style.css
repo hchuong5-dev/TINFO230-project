@@ -709,7 +709,7 @@ aspect-ratio:1/1;
 object-fit:cover;
 border-radius:8px;
 margin-bottom:12px;
-object-position:center;
+object-position:50%, 40%;
 }
 
 
@@ -1131,6 +1131,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
