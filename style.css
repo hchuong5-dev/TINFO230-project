@@ -191,58 +191,79 @@ nav a:hover {
 .menu-container{
 display:flex;
 gap:100px;
-padding:160px 80px 100px 80px;
+padding:120px 80px 100px 80px;
 align-items:flex-start;
 }
+
 
 
 /* SIDEBAR */
 
 .menu-sidebar{
-width:230px;
+width:240px;
 flex-shrink:0;
 position:sticky;
-top:120px;
+top:110px;
 height:fit-content;
+
+background:white;
+padding:25px 25px;
+border-radius:12px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
+/* CATEGORY TITLE */
+
 .menu-sidebar h3{
-margin-top:30px;
-margin-bottom:12px;
-font-size:14px;
-letter-spacing:1px;
-color:#7a5a3b;
+margin-top:25px;
+margin-bottom:14px;
+
+font-size:13px;
+letter-spacing:1.5px;
 text-transform:uppercase;
+
+color:#7a5a3b;
+border-bottom:1px solid #eee;
+padding-bottom:6px;
 }
+
+/* SIDEBAR LINKS */
 
 .menu-sidebar a{
 display:block;
-margin-bottom:12px;
+margin-bottom:10px;
 font-size:14px;
-color:#6b635c;
+color:#5f574f;
 transition:0.3s;
 }
 
 .menu-sidebar a:hover{
 color:#caa46a;
-transform:translateX(3px);
+transform:translateX(4px);
 }
 
 
 /* MAIN CONTENT */
 
-.menu-content{
-flex:1;
-max-width:900px;
+.menu-content h3{
+font-family:'Playfair Display', serif;
+margin-top:20px;
+margin-bottom:20px;
+font-size:22px;
+color:#2b2520;
 }
 
-.menu-content h2{
-font-family:'Playfair Display', serif;
-font-size:32px;
-margin-bottom:40px;
-border-bottom:1px solid #e4ded6;
-padding-bottom:10px;
+
+.menu-container{
+display:flex;
+gap:100px;
+padding:120px 80px 100px 80px;
+align-items:flex-start;
 }
+
+
+
 
 
 /* GRID LAYOUT */
@@ -840,6 +861,7 @@ color:#2b2520;
 }
 
 }
+
 
 
 
