@@ -1105,17 +1105,11 @@ display:flex;
 ========================= */
 @media (max-width:768px){
 
-.footer-container{
-grid-template-columns: repeat(2, 1fr);
-gap:40px;
-justify-items:center;
-}
-
 .footer-brand{
-display:none;
+font-size:32px;
+right:20px;
+top:90px;
 }
-
-
 
 
     nav {
@@ -1168,6 +1162,7 @@ display:none;
         font-size: 40px;
     }
 }
+
 
 
 
