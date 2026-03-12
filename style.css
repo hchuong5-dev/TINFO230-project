@@ -25,7 +25,11 @@ a {
 .home nav a {
     color: white; /* for home */
 }
-
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
 header {
     position: absolute;
     top: 0;
@@ -34,7 +38,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
     border-bottom: 1px solid rgba(0, 0, 0, 0.10);
 }
 
@@ -1064,6 +1067,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
