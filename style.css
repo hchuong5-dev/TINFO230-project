@@ -499,8 +499,9 @@ background:#4e392a;
 
 .curated-card img {
   width: 100%;
-  height: 400px;   /* increase px to show nicely */
+  height: 400px;
   object-fit: cover;
+  object-position: 50% 15%; /* keeps centered and show more of top */
 }
 
 .curated-body {
@@ -679,7 +680,7 @@ background:#4e392a;
 
 .whyus-image img {
     width: 100%;
-    height: 420px;      /* control the height */
+    height: 380px;      /* control the height */
     object-fit: cover;  /* crops the image nicely */
     border-radius: 12px;
 }
@@ -1009,6 +1010,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
