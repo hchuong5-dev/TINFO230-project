@@ -1106,14 +1106,9 @@ display:flex;
 @media (max-width:768px){
 
 .footer-brand{
-position:relative;
-right:auto;
-top:auto;
-display:block;
-text-align:center;
-font-size:50px;
-margin-top:30px;
+display:none;
 }
+
 
     nav {
         flex-wrap: wrap;
@@ -1165,6 +1160,7 @@ margin-top:30px;
         font-size: 40px;
     }
 }
+
 
 
 
