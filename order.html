@@ -6,8 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Order Online | Brew & Bloom</title>
 <link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,17 +13,14 @@
 <header>
   <div class="logo">☕ Brew & Bloom</div>
 
-  <div class="hamburger" onclick="toggleMenu()">
-      ☰
-  </div>
-
-  <nav id="nav-menu">
-    <a href="index.html">HOME</a>
-    <a href="menu.html">MENU</a>
-    <a href="story.html">ABOUT</a>
-    <a href="locations.html">LOCATIONS</a>
-    <a href="order.html" class="order-btn">ORDER ONLINE</a>
-  </nav>
+<nav>
+<a href="index.html">HOME</a>
+<a href="menu.html">MENU</a>
+<a href="story.html">ABOUT</a>
+<a href="locations.html">LOCATIONS</a>
+<a href="order.html" class="order-btn">ORDER ONLINE</a>
+<a href="cart.html" class="cart-btn">🛒</a>
+</nav>
 </header>
 
 
@@ -34,41 +29,6 @@
 <h1>Order Online</h1>
 <p class="order-subtitle">Select your favorite drinks and pastries</p>
 
-<!-- SEASONAL SPECIALS -->
-
-<h2>Seasonal Specials</h2>
-
-<div class="order-grid">
-
-<div class="order-item">
-<img src="image/seasonal1.jpg">
-<h3>Chestnut Praline Latte</h3>
-<p>$5.95</p>
-<button>Add to Order</button>
-</div>
-
-<div class="order-item">
-<img src="image/seasonal2.jpg">
-<h3>White Chocolate Mocha</h3>
-<p>$5.85</p>
-<button>Add to Order</button>
-</div>
-
-<div class="order-item">
-<img src="image/seasonal3.jpg">
-<h3>Cinnamon Spice Latte</h3>
-<p>$5.75</p>
-<button>Add to Order</button>
-</div>
-
-<div class="order-item">
-<img src="image/seasonal4.jpg">
-<h3>Peppermint Mocha</h3>
-<p>$5.95</p>
-<button>Add to Order</button>
-</div>
-
-</div>
 
 <!-- DRINKS -->
 <h2>Drinks</h2>
@@ -79,42 +39,42 @@
 <img src="images/espresso.jpg">
 <h3>Espresso</h3>
 <p>$3.50</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Espresso',3.50,'images/espresso.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="images/cappuccino.jpg">
 <h3>Cappuccino</h3>
 <p>$4.75</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Cappuccino',4.75,'images/cappuccino.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="images/latte.jpg">
 <h3>Latte</h3>
 <p>$5.00</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Latte',5.00,'images/latte.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="images/americano.jpg">
 <h3>Americano</h3>
 <p>$3.75</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Americano',3.75,'images/americano.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="images/mocha.jpg">
 <h3>Mocha</h3>
 <p>$5.25</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Mocha',5.25,'images/mocha.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="images/coldbrew.jpg">
 <h3>Cold Brew</h3>
 <p>$4.75</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Cold Brew',4.75,'images/coldbrew.jpg')">Add to Order</button>
 </div>
 
 </div>
@@ -130,21 +90,21 @@
 <img src="images/croissant.jpg">
 <h3>Croissant</h3>
 <p>$3.50</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Croissant',3.50,'images/croissant.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="images/pain-au-chocolat.jpg">
 <h3>Pain au Chocolat</h3>
 <p>$3.95</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Pain au Chocolat',3.95,'images/pain-au-chocolat.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="images/cinnamon-roll.jpg">
 <h3>Cinnamon Roll</h3>
 <p>$4.25</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Cinnamon Roll',4.25,'images/cinnamon-roll.jpg')">Add to Order</button>
 </div>
 
 </div>
@@ -160,84 +120,54 @@
 <img src="images/muffin.jpg">
 <h3>Blueberry Muffin</h3>
 <p>$3.75</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Blueberry Muffin',3.75,'images/muffin.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="images/banana-bread.jpg">
 <h3>Banana Bread</h3>
 <p>$3.95</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Banana Bread',3.95,'images/banana-bread.jpg')">Add to Order</button>
 </div>
 
 <div class="order-item">
 <img src="images/cookie.jpg">
 <h3>Chocolate Chip Cookie</h3>
 <p>$2.95</p>
-<button>Add to Order</button>
+<button onclick="addToCart('Chocolate Chip Cookie',2.95,'images/cookie.jpg')">Add to Order</button>
 </div>
 
 </div>
 
 </section>
 
-<!-- FOOTER section -->
-<footer class="footer">
 
-    <div class="footer-container">
+<script>
 
-        <div class="footer-column">
+function addToCart(name, price, image){
 
-            <h3>About</h3>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-            <a href="story.html">Our Story</a>
-            <a href="locations.html">Locations</a>
-            <a href="contact.html">Contact Us</a>
+let existing = cart.find(item => item.name === name);
 
-        </div>
+if(existing){
+existing.qty += 1;
+}else{
+cart.push({
+name:name,
+price:price,
+image:image,
+qty:1
+});
+}
 
+localStorage.setItem("cart", JSON.stringify(cart));
 
-        <div class="footer-column">
+alert(`${name} added to cart!`);
 
-            <h3>Shop</h3>
-            <!-- sends you to the menu -->
-            <a href="menu.html">Coffee</a>
+}
 
-        </div>
+</script>
 
-
-        <div class="footer-column">
-
-            <h3>Support</h3>
-
-            <a href="faq.html">FAQs</a>
-            <a href="support.html">Help</a>
-
-        </div>
-
-
-        <div class="footer-column">
-
-            <h3>Follow</h3>
-
-            <p>Instagram: @brewandbloom</p>
-            <p>Facebook: Brew & Bloom Café</p>
-
-
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-    <!-- copyright -->
-        <p>&copy 2024 Brew & Bloom. All rights reserved.</p>
-
-        
-    <!-- Big Brandmark -->
-        <div class="footer-brand">
-                Brew & Bloom
-        </div>
-    </div>
-</footer>
 </body>
 </html>
