@@ -499,7 +499,7 @@ background:#4e392a;
 
 .curated-card img {
   width: 100%;
-  height: 300px;   /* increase from 230px */
+  height: 350px;   /* increase px to show nicely */
   object-fit: cover;
 }
 
@@ -1007,6 +1007,7 @@ background:#4e392a;
         font-size: 40px;
     }
 }
+
 
 
 
