@@ -13,14 +13,25 @@
 <body>
 
 <header>
-<div class="logo">☕ Brew & Bloom</div>
-
-<nav>
-<a href="index.html">HOME</a>
-<a href="menu.html">MENU</a>
-<a href="story.html">ABOUT</a>
-<a href="locations.html">LOCATIONS</a>
-</nav>
+   <div class="nav-left">
+    
+    <a href="index.html" class="logo">☕ Brew & Bloom</a>
+    
+    <div class="hamburger" onclick="toggleMenu()">
+    ☰
+    </div>
+    
+    </div>
+    
+    <nav id="nav-menu">
+    
+        <a href="index.html#home">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="story.html">ABOUT</a>
+        <a href="locations.html">LOCATIONS</a>
+        <a href="order.html" class="order-btn">ORDER ONLINE</a>
+    
+    </nav>
 </header>
 
 
@@ -62,5 +73,6 @@
 <script src="cart.js"></script>
 
 </body>
-
+<script src="script.js"></script>
 </html>
+
