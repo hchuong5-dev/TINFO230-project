@@ -901,6 +901,21 @@ background:#4e392a;
 .contact-section p {
     margin-bottom: 12px;
 }
+/* contact to stay at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
 /* FOOTER SECTION */
 
 /* FOOTER */
@@ -1254,6 +1269,7 @@ nav {
   }
 
 }
+
 
 
 
