@@ -901,20 +901,6 @@ background:#4e392a;
 .contact-section p {
     margin-bottom: 12px;
 }
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-.simple-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.simple-page main {
-    flex: 1;
-}
 
 .hero {
     min-height: 100vh;
@@ -1276,6 +1262,7 @@ nav {
   }
 
 }
+
 
 
 
