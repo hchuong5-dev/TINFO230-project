@@ -892,14 +892,27 @@ background:#4e392a;
 /* CONTACT PAGE SPACING */
 
 .contact-section {
-    max-width: 800px;
-    margin: 80px auto;
+    max-width: 700px;
+    margin: 120px auto;     /* more space above and below */
     text-align: center;
-    line-height: 1.7;
+    line-height: 1.9;       /* increases spacing between lines */
+    padding: 0 20px;
+}
+
+.contact-section h1 {
+    font-size: 64px;
+    margin-bottom: 30px;    /* space under "Contact Us" */
+    letter-spacing: 1px;    /* makes title look cleaner */
 }
 
 .contact-section p {
-    margin-bottom: 12px;
+    margin-bottom: 18px;    /* more space between lines */
+    font-size: 18px;
+}
+
+.contact-section .description {
+    margin-bottom: 25px;    /* extra space under the description */
+    font-size: 20px;
 }
 
 .hero {
@@ -1262,6 +1275,7 @@ nav {
   }
 
 }
+
 
 
 
