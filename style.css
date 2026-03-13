@@ -901,20 +901,27 @@ background:#4e392a;
 .contact-section p {
     margin-bottom: 12px;
 }
-/* contact to stay at the bottom */
 html, body {
-    height: 100%;
     margin: 0;
+    padding: 0;
 }
 
-body {
+.simple-page {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-main {
+.simple-page main {
     flex: 1;
+}
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* FOOTER SECTION */
 
@@ -1269,6 +1276,7 @@ nav {
   }
 
 }
+
 
 
 
