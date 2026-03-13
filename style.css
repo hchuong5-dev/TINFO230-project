@@ -860,13 +860,13 @@ background:#4e392a;
     max-width: 700px;
     margin: 120px auto;     /* more space above and below */
     text-align: center;
-    line-height: 1.9;       /* increases spacing between lines */
+    line-height: 4;       /* increases spacing between lines */
     padding: 0 20px;
 }
 
 .contact-section h1 {
     font-size: 64px;
-    margin-bottom: 30px;    /* space under "Contact Us" */
+    margin-bottom: 60px;    /* space under "Contact Us" */
     letter-spacing: 1px;    /* makes title look cleaner */
 }
 
@@ -1186,5 +1186,6 @@ background:#4e392a;
         font-size: 26px;
     }
 }
+
 
 
